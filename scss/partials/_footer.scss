@@ -1,0 +1,95 @@
+footer {
+  background: getColour(secondary);
+  grid-area: footer;
+  height: auto;
+  flex-shrink: 0;
+
+  width: 100%;
+  padding: 30px;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+footer a {
+  color: getColour(bg);
+
+  display: block;
+}
+
+footer a:hover {
+  color: getColour(mustard);
+  text-decoration: none;
+}
+
+.main-content {
+  display: flex;
+}
+
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+
+.box .content {
+  margin: 20px 0 0 0;
+}
+
+.left .content p {
+  text-align: justify;
+}
+
+i {
+  color: getColour(mustard);
+  margin-right: 30px;
+  font-size: 20px;
+}
+i:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  color: getColour(bg);
+}
+
+.center .content .fas {
+  line-height: 45px;
+  text-align: center;
+}
+
+.center .content .fas:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  color: getColour(bg);
+}
+
+.center .right.content .text {
+  font-weight: 700;
+  color: getColour(bg);
+  font-family: $font-primary;
+  padding-left: 10px;
+}
+
+input {
+  width: 100%;
+}
+
+.right .content .text {
+  font-weight: 700;
+  color: getColour(bg);
+  font-family: $font-primary;
+}
+
+textarea {
+  width: 100%;
+}
+@media only screen and (max-width: 900px) {
+  footer {
+    position: relative;
+  }
+  .main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .main-content .box {
+    margin: 5px 0;
+  }
+}

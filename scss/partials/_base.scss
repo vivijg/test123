@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: getColour(bg);
+  margin: 0;
+  color: getColour(primary);
+  font-family: $font-primary;
+}
+.logo {
+  width: 180px;
+}
+
+p {
+  color: getColour(bg);
+  font-family: $font-primary;
+}
+
+h4 {
+  font-family: $font-heading;
+  color: getColour(mustard);
+}
+
+h5 {
+  font-family: $font-heading;
+  color: getColour(bg);
+}
+
+h1,
+h2 {
+  font-family: $font-heading;
+  color: getColour(primary);
+}
+h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: getColour(bg);
+  text-decoration: underline getColour(mustard);
+}
+
+.detail-details {
+  color: getColour(primary);
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    float: right;
+  }
+}

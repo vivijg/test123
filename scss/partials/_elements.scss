@@ -1,0 +1,67 @@
+.welcome {
+  position: absolute;
+  display: flex;
+  top: 20%;
+  left: 10%;
+
+  text-decoration: underline getColour(mustard);
+}
+
+.the-quote {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  color: getColour(primary);
+  $font-primary: "PT Sans", sans-serif;
+  margin-left: 10px;
+  width: 30%;
+}
+.welcome-quote {
+  display: flex;
+  top: 50%;
+  left: 10%;
+}
+button {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+.btn {
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn button:hover {
+  text-decoration: underline getColour(mustard);
+}
+
+/* BUTTONS*/
+
+.back {
+  color: getColour(bg);
+  font-weight: 700;
+}
+.back:hover {
+  color: getColour(bg);
+  text-decoration: underline getColour(mustard);
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 850px) {
+  .the-quote {
+    top: 80%;
+    width: 80%;
+    margin: 0;
+  }
+  .welcome {
+    top: 65%;
+    margin: 0;
+  }
+}
